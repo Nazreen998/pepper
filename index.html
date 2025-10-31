@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Premium Black Pepper — Single Product Store</title>
+  <meta name="description" content="Fresh, sun-dried premium black pepper. Whole & ground. Free shipping on orders over ₹499." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=pepper_fix1">
+  <script src="script.js?v=pepper_fix1" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org/",
+    "@type":"Product",
+    "name":"Premium Black Pepper",
+    "image":["pepper1.png","pepper2.png","pepper3.png"],
+    "description":"Fresh, bold aroma, high piperine content. Handpicked and sun-dried.",
+    "brand":{"@type":"Brand","name":"Abhinav Foods"},
+    "offers":{"@type":"Offer","priceCurrency":"INR","price":"199","availability":"https://schema.org/InStock"}
+  }
+  </script>
+  <script>
+  // paste your exact Web App URL that ends with /exec
+  window.GS_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbylDmZQ2lo8jhVNktpoNhdhgkB7zOcmfiHMbW0wkCZB1uaj_6yRbFtuyJUjTVruCbw/exec";
+</script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#">
+        <img src="logoo.png" alt="Brand" width="50" height="50">
+        <span>PEPPER ONLY</span>
+      </a>
+      <nav class="menu">
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <button id="open-cart" class="icon-btn" aria-label="Open cart">🛒<span id="cart-count" class="badge">0</span></button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO / PRODUCT -->
+  <main class="container product">
+    <section class="gallery">
+      <img id="heroImg" src="pepper.png" alt="Premium black pepper" class="hero-img">
+     <div class="thumbs-scroll">
+  <div class="thumbs">
+    <img class="thumb active" src="p1.png" data-big="p1.png" alt="Main"      loading="lazy" width="300" height="300">
+    <img class="thumb"         src="p2.png" data-big="p2.png" alt="Close up"  loading="lazy" width="300" height="300">
+    <img class="thumb"         src="p3.png" data-big="p3.png" alt="Serving"   loading="lazy" width="300" height="300">
+    <img class="thumb"         src="p4.png" data-big="p4.png" alt="Main"      loading="lazy" width="300" height="300">
+    <img class="thumb"         src="p5.png" data-big="p5.png" alt="Close up"  loading="lazy" width="300" height="300">
+    <img class="thumb"         src="p6.png" data-big="p6.png" alt="Serving"   loading="lazy" width="300" height="300">
+  </div>
+</div>
+
+    </section>
+
+    <section class="details">
+      <h1>Premium Black Pepper</h1>
+      <p class="subtitle">Handpicked • Sun-dried • High aroma</p>
+
+      <div class="rating">★ ★ ★ ★ ★ <span>(248 reviews)</span></div>
+
+      <div class="price-row">
+        <div>
+          <span id="price" class="price">₹199</span>
+          <span class="mrp">₹249</span>
+          <span class="off">20% OFF</span>
+        </div>
+        <div class="ship">Free shipping over ₹499</div>
+      </div>
+
+      <!-- Variant -->
+      <div class="group">
+        <label class="label">Choose size</label>
+        <div class="pill-row" id="variants">
+          <button class="pill active" data-variant="100" data-price="199">100 g</button>
+          <button class="pill" data-variant="250" data-price="399">250 g</button>
+          <button class="pill" data-variant="500" data-price="699">500 g</button>
+        </div>
+      </div>
+
+      <!-- Grind -->
+      <div class="group">
+        <label class="label">Type</label>
+        <div class="pill-row" id="types">
+          <button class="pill active" data-type="whole">Whole</button>
+          <button class="pill" data-type="ground">Ground</button>
+        </div>
+      </div>
+
+      <!-- Qty -->
+      <div class="group qty-row">
+        <label class="label">Quantity</label>
+        <div class="qty">
+          <button class="step" id="minus" aria-label="Decrease">−</button>
+          <input id="qty" type="number" value="1" min="1" inputmode="numeric" />
+          <button class="step" id="plus" aria-label="Increase">+</button>
+        </div>
+      </div>
+
+      <!-- Add -->
+      <div class="actions">
+        <button id="add" class="btn primary">Add to Cart</button>
+        <button id="buy" class="btn ghost">Buy Now</button>
+      </div>
+
+      <ul class="bullets">
+        <li>Source: Western Ghats farms</li>
+        <li>Lab-tested, no adulteration</li>
+        <li>Packed within 48h of order</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- INFO BANDS -->
+  <section class="container bands">
+    <div class="band">COD available</div>
+    <div class="band">Secure payments (UPI/Cards)</div>
+    <div class="band">Easy 7-day returns</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="container about">
+    <div class="about-media">
+      <img src="pepper2.png" alt="Pepper vines">
+    </div>
+    <div class="about-copy">
+      <h2>Bold flavour. Pure quality.</h2>
+      <p>Our pepper is grown in small lots, naturally sun-dried to lock aroma, and sorted for uniform size & pungency (high piperine). Perfect for everyday cooking and gourmet finishing.</p>
+      <ul class="checks">
+        <li>Grade: TGSEB/ASTA compliant</li>
+        <li>Moisture &lt; 12%</li>
+        <li>FSSAI licensed facility</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="container reviews">
+    <h2>What customers say</h2>
+    <div class="review-grid">
+      <article class="rev">
+        <p class="stars">★★★★★</p>
+        <p>The aroma hits immediately—massive upgrade to my pepper mill.</p>
+        <span>— Keerthana</span>
+      </article>
+      <article class="rev">
+        <p class="stars">★★★★★</p>
+        <p>Great heat and freshness. Loved the 250g pack value.</p>
+        <span>— Rahul</span>
+      </article>
+      <article class="rev">
+        <p class="stars">★★★★☆</p>
+        <p>Ground option is super convenient. Packaging is neat.</p>
+        <span>— Divya</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="container faq">
+    <h2>FAQs</h2>
+    <details open>
+      <summary>Shelf life & storage?</summary>
+      <p>Best before 12 months. Store airtight in a cool, dry place away from light.</p>
+    </details>
+    <details>
+      <summary>Is it steam sterilized?</summary>
+      <p>Yes, we ensure microbial safety while retaining flavour compounds.</p>
+    </details>
+    <details>
+      <summary>Whole vs ground—what to choose?</summary>
+      <p>Whole for grinders and long shelf life. Ground for convenience and quick marinades.</p>
+    </details>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container foot-inner">
+      <div>
+        <strong>Abhinav Foods</strong><br>
+        Madurai-06, Tamil Nadu — India<br>
+        <a href="tel:+919999999999">+91 99999 99999</a> · <a href="mailto:hello@example.com">pepperandco@gmail.com</a>
+      </div>
+      <div class="foot-links">
+        <a href="#about">About</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a><a href="#">Terms</a>
+      </div>
+      <p class="copy">© <span id="y"></span> pepper only</p>
+    </div>
+  </footer>
+
+  <!-- STICKY MOBILE BAR -->
+  <div class="sticky-bar">
+    <div><strong id="stickyTitle">Black Pepper — 100 g</strong><span id="stickyPrice">₹199</span></div>
+    <button id="stickyAdd" class="btn primary small">Add to Cart</button>
+  </div>
+
+  <!-- CART DRAWER -->
+  <aside id="cart" class="cart" aria-hidden="true">
+    <div class="cart-head">
+      <strong>Your Cart</strong>
+      <button id="close-cart" class="icon-btn" aria-label="Close">✕</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="coupon">
+      <input id="coupon" type="text" placeholder="Coupon code (PEPPER10)">
+      <button id="apply" class="btn ghost small">Apply</button>
+      <span id="couponMsg" class="coupon-msg"></span>
+    </div>
+    <div class="totals">
+      <div><span>Subtotal</span><span id="sub">₹0</span></div>
+      <div><span>Discount</span><span id="disc">₹0</span></div>
+      <div class="grand"><span>Total</span><span id="grand">₹0</span></div>
+    </div>
+    <button id="checkout" class="btn primary wide">Checkout</button>
+  </aside>
+
+  <!-- Backdrop + Checkout Modal -->
+  <div id="backdrop" class="backdrop"></div>
+
+  <div id="chkModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <div class="modal-head">
+        <strong>Customer Details</strong>
+        <button id="chkClose" class="icon-btn" aria-label="Close">✕</button>
+      </div>
+
+      <form id="chkForm" class="modal-body">
+        <div class="field">
+          <label>Customer Name *</label>
+          <input id="fName" name="customerName" type="text" required placeholder="Your full name">
+        </div>
+        <div class="field">
+          <label>Phone *</label>
+          <input id="fPhone" name="phone" type="tel" required placeholder="10-digit phone" pattern="[0-9]{10}">
+        </div>
+        <div class="field">
+          <label>Email</label>
+          <input id="fEmail" name="email" type="email" placeholder="you@example.com">
+        </div>
+        <div class="field">
+          <label>Quantity (g / kg) *</label>
+          <input id="fQty" name="quantity" type="text" required placeholder="e.g., 2 x 100g">
+          <small class="muted">Defaults to items already in your cart</small>
+        </div>
+        <div class="field">
+          <label>Address</label>
+          <textarea id="fNotes" name="notes" rows="3" placeholder="Flat/Street, landmark, special instructions"></textarea>
+        </div>
+        <button id="chkSubmit" class="btn primary wide" type="submit">Submit Order</button>
+        <p id="chkMsg" class="muted" style="margin-top:8px"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Config (match Code.gs) -->
+  <script>
+    window.GS_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbylDmZQ2lo8jhVNktpoNhdhgkB7zOcmfiHMbW0wkCZB1uaj_6yRbFtuyJUjTVruCbw/exec";   // <-- paste your /exec
+    window.GS_TOKEN      = "4f089d0559d85884075864ba7dabe741c682c42afc731a898cff3dcdebb34c7f2adc6b1947d599d4de20d9f38d5d1be7562b0c452e389c2198da855120d22eb4";      // <-- same as CFG.TOKEN
+  </script>
+  <script src="script.js?v=pepper_20251031"></script>
+
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</body>
+</html>
